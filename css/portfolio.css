@@ -1,6 +1,8 @@
 body,
 html {
   overflow: visible;
+  background-color: #fff;
+  color: white !important;
 }
 .portfolio {
   justify-content: center;
@@ -12,14 +14,13 @@ html {
   margin-top: 50px;
 }
 .Port-links a {
-  color: white;
+  color: #000;
   font-size: 11px;
   padding: 8px;
   margin: 5px;
   border-radius: 20px;
   outline: none;
   text-decoration: none;
-  color: black;
   cursor: pointer;
 }
 .Port-links a:hover {
@@ -33,9 +34,12 @@ html {
     font-size: 12px;
     margin-right: -10px;
   }
-
+  .img-div img{
+    width: 200px;
+  }
 }
 .img-div {
+  /* overflow: hidden; */
   margin-top: 10px;
   display: flex;
   flex-wrap: wrap;
@@ -44,27 +48,29 @@ html {
   justify-content: center;
   align-content: center;
 }
+.img-div img{
+  width: 400px;
+  box-shadow: 1px 2px 9px 6px rgb(100, 98, 98);
+}
 .work-images {
-  margin: 10px;
+  margin: 20px;
   position: relative;
 }
-.img-hover {
-  width: 250px;
-}
+
 .img-hover:hover {
-  transition: transform 0.2s;
   opacity: 1;
   display: block;
-  width: 230px;
   height: auto;
-  animation: zoominoutsinglefeatured 2s linear;
 }
 @media (max-width: 700px) {
   .contact-me {
     display: none;
   }
+  .img-div img{
+    width: 200px;
+  }
 }
-@keyframes zoominoutsinglefeatured {
+/* @keyframes zoominoutsinglefeatured {
   0% {
     transform: scale(1, 1);
   }
@@ -74,11 +80,11 @@ html {
   100% {
     transform: scale(1, 1);
   }
-}
+} */
 
-.single-featured-image-header img {
+/* .single-featured-image-header img {
   animation: zoominoutsinglefeatured 15s forwards;
-}
+} */
 .overlay {
   transition: 0.5s ease;
   opacity: 0;
@@ -88,11 +94,12 @@ html {
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
-  animation: easedown 1s linear;
+  /* animation: easedown 1s linear; */
 }
 
 .work-images:hover .img-hover {
   opacity: 0.3;
+  background-color: black;
   transition: 0.5s ease;
 }
 
@@ -100,9 +107,14 @@ html {
   opacity: 1;
 }
 
-.text {
-  font-size: 11px;
+.text a{
+  padding: 90%;
+  text-decoration: none;
+  font-size: 17px;
   color: rgb(0, 0, 0);
-  font-size: 12px;
+  /* font-size: 12px; */
 }
-
+.text a:hover{
+  color: #e4521d;
+  font-size: 19px;
+}

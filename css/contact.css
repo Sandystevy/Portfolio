@@ -34,23 +34,19 @@ body {
 
 .name-box {
   margin-right: 10px;
-  /* border: 1px solid#000; */
-  /* width: 200px;
-    height: 32px; */
-  position: relative;
   margin-top: 30px;
 }
 input:focus {
-  border: 3px solid #f74301a8;
+  border: 1px solid #f74301a8;
   outline: #ff652f;
   transition: width 2s;
 }
 textarea:focus {
-  border: 3px solid #f74301a8;
+  border: 1px solid #f74301a8;
   outline: #f84200;
 }
 .submit {
-  font-weight: bold;
+  /* font-weight: bold; */
   font-size: 11px;
   width: 110px;
   margin-top: 10px;

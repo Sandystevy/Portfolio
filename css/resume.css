@@ -1,4 +1,6 @@
-
+body  {
+  color: white !important;
+}
 .contact-me {
   position: absolute;
   position: fixed;
@@ -26,7 +28,7 @@
     font-size: 30px;
     font-weight: 900;
     margin-top: 15px;
-    margin-left: 50px;
+    margin-left: 70px;
   }
   .lines{
       display: flex;
